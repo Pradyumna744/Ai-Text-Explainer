@@ -1,0 +1,25 @@
+{
+  "manifest_version": 3,
+  "name": "AI Text Explainer",
+  "version": "1.0",
+  "description": "Select text on any webpage to get AI-powered explanations",
+  "permissions": [
+    "activeTab"
+  ],
+  "action": {
+    "default_title": "AI Text Explainer"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "<all_urls>"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "tooltip.css"
+      ]
+    }
+  ]
+}
